@@ -357,12 +357,133 @@
         
 <section id="aio-01-intro"><p>Content from <a href="01-intro.html">Introductions</a></p>
 <hr>
-<p>Last updated on 2026-10-06 |
+<p>Last updated on 2026-10-07 |
 
         <a href="https://github.com/corcor27/HCRW-workshop/edit/main/episodes/01-intro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
+<section><h2 class="section-heading" id="workshop-overview">Workshop Overview<a class="anchor" aria-label="anchor" href="#workshop-overview"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Title: Designing Robust Data Management Plans (DMPs) for Research
+Success</li>
+<li>Target Audience: Early Career Researchers (ECRs), PhD students, and
+Principal Investigators (PIs) across STEM and HSS disciplines.</li>
+<li>Duration: 3 hours (Half-day interactive workshop)</li>
+<li>Format: Hybrid / In-person hands-on workshop (Includes short
+lectures, individual exercises, group peer review, and tool
+demonstrations)</li>
+<li>Key Tools Covered: DMPonline / DMPTool, institutional repositories,
+license selectors, and FAIR sharing registries.</li>
+</ul></section><section><h2 class="section-heading" id="workshop-schedule">Workshop Schedule<a class="anchor" aria-label="anchor" href="#workshop-schedule"></a>
+</h2>
+<hr class="half-width">
+<p>schedule_data &lt;- data.frame( Time = c(“09:00 - 09:20”, “09:20 -
+10:15”, “10:15 - 10:30”, “10:30 - 11:15”, “11:15 - 11:45”, “11:45 -
+12:00”), Duration = c(“20 min”, “55 min”, “15 min”, “45 min”, “30 min”,
+“15 min”), Session_Topic = c(“1. Why DMPs Matter”, “2. Walkthrough of
+DMP Components”, “Break”, “3. Hands-On Drafting Session”, “4. Peer
+Review &amp; Edge Cases”, “5. Tooling, Resources &amp; Q&amp;A”),
+Core_Activities = c( “Introduction to research data life cycle, funder
+compliance, avoiding data loss, and the FAIR Data Principles.”,
+“Interactive teardown of the 6 core pillars of a standard DMP template
+(Data Creation, Documentation, Ethics, Storage, Sharing,
+Responsibilities).”, “Refreshments &amp; Networking”, “Participants use
+DMPonline / DMPTool or a structured template to draft sections for their
+own project.”, “Group evaluation of draft plans using a review
+checklist. Focus on high-risk areas (sensitive data, large file volumes,
+proprietary software).”, “Summary of institutional support, data
+repositories, DOI assignment, and final Q&amp;A.” ) )</p>
+<p>knitr::kable( schedule_data, col.names = c(“Time”, “Duration”,
+“Session Topic”, “Core Activities &amp; Focus”), caption = “Half-Day
+Workshop Schedule” )</p>
+<p>Detailed Session Breakdown Session 1: Foundation &amp; The FAIR
+Principles (20 mins)</p>
+<ul>
+<li>Data Lifecycles vs. Project Lifecycles: Moving beyond project
+end-dates to long-term stewardship.</li>
+<li>FAIR Principles Breakdown:
+<ul>
+<li>Findable: Persistent Identifiers (DOIs, ORCIDs), rich metadata.</li>
+<li>Accessible: Standard communications protocols, open vs. restricted
+access routes.</li>
+<li>Interoperable: Standard formats, controlled vocabularies,
+ontologies.</li>
+<li>Reusable: Clear licensing (e.g., Creative Commons, MIT), provenance
+documentation.</li>
+</ul>
+</li>
+</ul>
+<p>Session 2: The Core Components of a DMP (55 mins)</p>
+<ol style="list-style-type: decimal">
+<li>Data Collection &amp; Types:</li>
+</ol>
+<ul>
+<li>Distinguishing between raw, processed, and final research
+outputs.</li>
+<li>File formats: Choosing non-proprietary formats for long-term
+sustainability (e.g., .csv over .xlsx, .flac or .wav over .mp3).</li>
+<li>Volume estimates and storage scaling.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Documentation &amp; Metadata:</li>
+</ol>
+<ul>
+<li>README file structures, codebook design, and data dictionaries.</li>
+<li>Discipline-specific metadata standards (e.g., Dublin Core, DDI,
+Schema.org).</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Ethics, Legal &amp; Intellectual Property:</li>
+</ol>
+<ul>
+<li>Handling sensitive data: Consent forms for data sharing,
+anonymization vs. pseudonomization, GDPR/data protection alignment.</li>
+<li>Copyright, ownership (university vs. funder vs. researcher), and
+choosing open licenses.</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>Storage, Backup &amp; Security:</li>
+</ol>
+<ul>
+<li>The 3-2-1 Backup Strategy (3 copies, 2 different media, 1
+offsite/cloud).</li>
+<li>Encryption protocols for sensitive data in transit and at rest.</li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li>Selection, Preservation &amp; Sharing:</li>
+</ol>
+<ul>
+<li>Deciding what data to keep vs. what to destroy.</li>
+<li>Choosing a repository (Generalist vs. Domain-Specific
+vs. Institutional).</li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li>Responsibilities &amp; Resources:</li>
+</ol>
+<ul>
+<li>Roles (who maintains the data during and after the project).</li>
+<li>Costing data management into grant applications (e.g., repository
+fees, transcription costs, curation effort).</li>
+</ul>
+<p>Session 3: Practical Drafting Exercise (45 mins)</p>
+<p>Activity Prompt: Participants log into DMPonline/DMPTool or open the
+provided Word template and complete three target sections: - Section A:
+Data Description &amp; Formats. - Section B: Ethics, Access Rights, and
+Anonymization Plan. - Section C: Storage, Backup, and Long-Term
+Preservation Strategy.</p>
+<p>Exercise Facilitator Tip: Circulate around the room to address
+specific technical edge cases (e.g., high-performance computing storage
+limits, commercial restrictions, biological or human subject data
+constraints).</p>
+<p>Session 4: Peer Review Matrix &amp; High-Risk Scenario Analysis (30
+mins)</p>
+<p>Group Case Study Options (10 mins discussion): - Scenario A: Managing
+several terabytes of imaging/sensor outputs on high-performance compute
+clusters. - Scenario B: Sharing anonymized interview transcripts with
+sensitive clinical context.</p>
 <div class="overview card">
 <h2 class="card-header">Overview</h2>
 <div class="row g-0">
@@ -386,144 +507,18 @@ diagnosis?”</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Establish a shared baseline of understanding regarding the current
-hype versus the reality of AI in healthcare.</li>
-<li>Uncover the audience’s existing biases, fears, or enthusiasm about
-machine learning.</li>
-<li>Set expectations that this workshop is about bridging the gap
-between data science and clinical utility.</li>
+<li>Understand Funder Requirements: Identify core expectations from
+major funding bodies regarding research data stewardship.</li>
+<li>Apply the FAIR Principles: Operationalize Findability,
+Accessibility, Interoperability, and Reusability in daily
+workflows.</li>
+<li>Draft a Section-by-Section DMP: Create a practical, living DMP for
+their current or upcoming research projects.</li>
+<li>Budget &amp; Risk Assess Data: Estimate costs associated with data
+storage, curation, anonymization, and long-term preservation.</li>
 </ul>
 </div>
 </div>
-</div>
-</div>
-</div>
-<section><h2 class="section-heading" id="welcome">Welcome<a class="anchor" aria-label="anchor" href="#welcome"></a>
-</h2>
-<hr class="half-width">
-<p>Welcome, everyone, to today’s workshop. Whether your background is in
-medicine, data science, administration, or research, you are in the
-right teams meeting. we are all at different stages in our AI/ML
-journey. As we all have a different set of experiences and have varying
-prospective when it comes to what we expect from ML/AI For example:</p>
-<ul>
-<li>If you are a clinician, you speak the language of patient care,
-workflows, and clinical utility.</li>
-<li>If you are a data scientist, you speak the language of math,
-matrices, and optimization.</li>
-<li>If you machine learning engineers, you speak the language of numbers
-and quantifying hallucination.</li>
-</ul>
-<p>The magic and the massive frustration of AI in healthcare happens
-right in the middle. Our goal today isn’t to make clinicians write code,
-nor is it to turn data scientists into medical doctors. Our goal is to
-learn how to translate a complex medical reality into a structured data
-problem, and then translate that model’s output back into something safe
-and useful at the patient’s bedside.</p>
-<p><strong>We will do this by exploring how these algorithms work, some
-case studies and exploring the draws backs and how to implemented these
-models.</strong></p>
-<figure><img src="fig/stickman_meme.png" style="width:30.0%" class="figure mx-auto d-block"></figure></section><section><h2 class="section-heading" id="presenters">Presenters<a class="anchor" aria-label="anchor" href="#presenters"></a>
-</h2>
-<hr class="half-width">
-<div class="section level3">
-<h3 id="professor-reyer-zwiggelaar">Professor Reyer Zwiggelaar<a class="anchor" aria-label="anchor" href="#professor-reyer-zwiggelaar"></a>
-</h3>
-<p>Professor Zwiggelaar has nearly 30 years of research experience
-working at the intersection of computer science and health data, with a
-specific focus on computer-aided diagnosis. Over his career, he has
-published more than 300 full papers across journals and high-quality
-conferences, and he serves as an Associate Editor for Pattern
-Recognition and the IEEE Journal of Biomedical and Health Informatics.
-Additionally, he has a strong track record in academic mentorship,
-having guided 25 PhD students to completion, with five currently under
-his supervision, three awaiting their viva, and having served as an
-external examiner for 30 PhD candidates.</p>
-<p><img src="fig/reyer.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
-</div>
-<div class="section level3">
-<h3 id="cory-thomas">Cory Thomas<a class="anchor" aria-label="anchor" href="#cory-thomas"></a>
-</h3>
-<p>Cory Thomas has worked as a Research Software Engineer (RSE) for the
-past three years and has his PhD in computer vision for breast cancer
-research. He has also contributed to projects involving large language
-models for historical archives, as well as medical applications such as
-cleft palate analysis. In addition, Cory has two years of industry
-experience as an AI developer.</p>
-<p><img src="fig/cory.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
-<div id="challenge1" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
-<div class="callout-content">
-<p>Let’s kick things off with some quick introductions! Tell us your
-name and what brings you to the world of AI and machine learning?</p>
-</div>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="roadmap">RoadMap<a class="anchor" aria-label="anchor" href="#roadmap"></a>
-</h2>
-<hr class="half-width">
-<p>Here is a rough look at what we hope to cover today. It’s a packed
-schedule, so there’s no pressure to rush through it all. We fully expect
-we might need an additional session to wrap things up. Please ask
-questions as we go if anything is unclear, as we really want to take
-this at a relaxed pace.</p>
-<p><img src="fig/roadmap.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
-<p><img src="fig/ML_meme.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
-</section><section><h2 class="section-heading" id="why-now">Why Now?<a class="anchor" aria-label="anchor" href="#why-now"></a>
-</h2>
-<hr class="half-width">
-<p>AI isn’t exploding today because the math is brand new; most of the
-underlying math has existed for decades. It is exploding because three
-critical forces have finally collided. The Three Drivers of the
-Healthcare AI Explosion</p>
-<p><strong>Total Digitization of Health Data:</strong></p>
-<ul>
-<li>Twenty years ago, patient data was trapped in paper charts, physical
-film folders, and fax machines. Today, Electronic Health Records (EHRs)
-have digitised patient history. We finally have digital repositories of
-vitals, lab results, and medications that algorithms can actually
-read.</li>
-</ul>
-<p><strong>The Imaging and Genomic Deluge:</strong></p>
-<ul>
-<li>A single high-resolution 3D CT scan or a whole-genome sequencing
-file contains gigabytes of data. Human brains are spectacular at
-synthesis, but we physically do not have enough hours in the day to
-parse the sheer volume of data being generated. We built the sensors to
-collect the data; now we need the computational “eyes” to help us look
-at it.</li>
-</ul>
-<p><strong>Cheap, Cloud-Scale Compute Power:</strong></p>
-<ul>
-<li>Training a deep learning neural network requires billions of
-mathematical calculations per second. The rise of specialized hardware
-(like GPUs) and cloud computing means a model that would have taken a
-university supercomputer weeks to train ten years ago can now be trained
-in a few hours for the cost of a few cups of coffee.</li>
-</ul>
-<p><img src="fig/benifits_AI.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
-</section><section><h2 class="section-heading" id="group-discussion-builder">Group Discussion Builder<a class="anchor" aria-label="anchor" href="#group-discussion-builder"></a>
-</h2>
-<hr class="half-width">
-<div id="challenge2" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
-<div class="callout-content">
-<ul>
-<li>What ML/AI tools are you already aware of in healthcare, and what is
-your immediate gut reaction to them optimism, skepticism, or
-anxiety?</li>
-</ul>
 </div>
 </div>
 </div>
@@ -1959,8 +1954,8 @@ diseases.</li>
   "url": "https://swcarpentry.github.io/python-novice-inflammation/aio.html",
   "identifier": "https://swcarpentry.github.io/python-novice-inflammation/aio.html",
   "dateCreated": "2014-11-25",
-  "dateModified": "2026-10-06",
-  "datePublished": "2026-10-06"
+  "dateModified": "2026-10-07",
+  "datePublished": "2026-10-07"
 }
 
   </script><script>
