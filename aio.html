@@ -281,6 +281,18 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="05-exercise.html">5. </a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -1094,6 +1106,161 @@ keys are stored separately from raw analytical files.</li>
 <li>Standardize Metadata From Day 1: Using ISO standards (e.g., ISO 8601
 for dates: YYYY-MM-DD) and clear missing value indicators (NA) prevents
 downstream analysis bugs.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section></section><section id="aio-05-exercise"><p>Content from <a href="05-exercise.html"></a></p>
+<hr>
+<p>Last updated on 2026-10-07 |
+
+        <a href="https://github.com/corcor27/HCRW-workshop/edit/main/episodes/05-exercise.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<table class="table"><tbody>
+<tr>
+<td>title: Peer Review &amp; Edge Cases</td>
+</tr>
+<tr>
+<td>teaching: 45</td>
+</tr>
+<tr>
+<td>exercises: 15</td>
+</tr>
+</tbody></table>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Data Retention Limits: “If forced to cut your dataset volume by 50%
+for long-term archiving due to storage caps, what intermediate files
+would you discard first?”</li>
+<li>Reviewing Peer Plans: “What was the most common gap or ambiguity you
+noticed when evaluating your partner’s draft plan?”</li>
+<li>Living Document Maintenance: “Who on your research team will be
+tasked with updating the DMP when project parameters, software versions,
+or personnel change?”</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Apply a Review Rubric: Evaluate a peer’s draft DMP for completeness,
+feasibility, and funder compliance.</li>
+<li>Resolve High-Risk Scenarios: Formulate strategies for complex data
+edge cases, including high-throughput imaging, restricted clinical data,
+and proprietary software dependencies.</li>
+<li>Establish Data Retention Thresholds: Determine what intermediate
+data can be safely discarded versus what raw/processed data must be
+preserved long-term.</li>
+<li>Finalize an Actionable DMP: Refine their project DMP into a
+submission-ready, living document.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="workflow-progression">Workflow &amp; Progression<a class="anchor" aria-label="anchor" href="#workflow-progression"></a>
+</h2>
+<hr class="half-width">
+<p><img src="fig/pillar_4.1.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
+</section><section><h2 class="section-heading" id="peer-evaluation-review-rubric">Peer Evaluation &amp; Review Rubric<a class="anchor" aria-label="anchor" href="#peer-evaluation-review-rubric"></a>
+</h2>
+<hr class="half-width">
+<p>Participants pair up to review a colleague’s draft sections (from
+Session 3) using this 6-point rubric.</p>
+<p><img src="fig/pillar_4.2.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
+</section><section><h2 class="section-heading" id="edge-case-analysis-solutions">Edge Case Analysis &amp; Solutions<a class="anchor" aria-label="anchor" href="#edge-case-analysis-solutions"></a>
+</h2>
+<hr class="half-width">
+<div class="section level3">
+<h3 id="case-1-high-volume-computational-data-e-g--hpc-large-scale-simulations">Case 1: High-Volume Computational Data (e.g., HPC / Large Scale
+Simulations)<a class="anchor" aria-label="anchor" href="#case-1-high-volume-computational-data-e-g--hpc-large-scale-simulations"></a>
+</h3>
+<ul>
+<li>The Challenge: Generating tens of terabytes of intermediate raw
+outputs, model checkpoints, or raw sensor feeds where long-term cloud
+storage costs are prohibitive.</li>
+<li>The Solution:
+<ul>
+<li>Document a clear selection and destruction policy: preserve the raw
+input configurations, processing code/scripts, random seeds, and final
+summarized outputs.</li>
+<li>Intermediate cache or scratch files that can be deterministically
+re-computed from source code should be flagged for deletion
+post-project.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="case-2-restricted-clinical-or-sensitive-human-data">Case 2: Restricted Clinical or Sensitive Human Data<a class="anchor" aria-label="anchor" href="#case-2-restricted-clinical-or-sensitive-human-data"></a>
+</h3>
+<ul>
+<li>The Challenge: Datasets containing human subject imaging, genomic
+sequences, or sensitive health records that cannot be shared publicly
+under GDPR or institutional ethics rules.</li>
+<li>The Solution:
+<ul>
+<li>Adopt the “As open as possible, as closed as necessary”
+framework.</li>
+<li>Publish the dataset metadata (title, methodology, abstract,
+keywords) openly on a repository to assign a DOI.</li>
+<li>Deposit raw files into a Managed Access Repository controlled by a
+Data Access Committee (DAC), requiring data transfer agreements for
+secondary access.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="case-3-proprietary-equipment-custom-code">Case 3: Proprietary Equipment &amp; Custom Code<a class="anchor" aria-label="anchor" href="#case-3-proprietary-equipment-custom-code"></a>
+</h3>
+<ul>
+<li>The Challenge: Data generated by specialized lab hardware locked
+into vendor-specific binary formats (.raw, .mat, proprietary acquisition
+software).</li>
+<li>The Solution:
+<ul>
+<li>Archive the native binary files to preserve original signal
+fidelity.</li>
+<li>Programmatically generate and archive an open-standard derivative
+(e.g., .csv, .tiff, .HDF5) alongside lightweight open-source parsing
+scripts (Python/R) so future researchers can read the data without
+vendor licenses.</li>
+</ul>
+</li>
+</ul>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Constructive Peer Review: Reviewing another researcher’s DMP often
+exposes gaps in your own backup and documentation assumptions.</li>
+<li>Metadata Can Be Open Even If Data Is Closed: Sensitive human or
+commercial data can remain FAIR by making its metadata discoverable
+while keeping raw files under controlled access.</li>
+<li>Distinguish Recomputable vs. Irreplaceable Data: Save raw inputs,
+seeds, and analytical code; destroy easily recomputable intermediate
+scratch files if storage space is constrained.</li>
+<li>A DMP is a Living Document: Revisit and update your plan at major
+project milestones, personnel transitions, or before submitting paper
+manuscripts.</li>
 </ul>
 </div>
 </div>
