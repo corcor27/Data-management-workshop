@@ -251,7 +251,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="02-variables_and_basic_data_types.html">2. How ML/AI Works—A Foundation</a>
+        <a href="02-variables_and_basic_data_types.html">2. Foundation &amp; The FAIR Principles</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -263,7 +263,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="03-lists_and_dictionaries.html">3. ML/AI in Healthcare Applications</a>
+        <a href="03-lists_and_dictionaries.html">3. Walkthrough of DMP Components</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -371,31 +371,42 @@ computing power, digitized health records (EHRs), and an explosion of
 genomic data.</li>
 <li>Effective healthcare AI requires collaboration data scientists
 understand the math, but clinicians understand the patient.</li>
-</ul></section><section id="02-variables_and_basic_data_types"><h2 class="section-heading"><a href="02-variables_and_basic_data_types.html">How ML/AI Works—A Foundation</a></h2>
+</ul></section><section id="02-variables_and_basic_data_types"><h2 class="section-heading"><a href="02-variables_and_basic_data_types.html">Foundation &amp; The FAIR Principles</a></h2>
 <hr class="half-width">
 <ul>
-<li>Data Conversion: Computers do not see an X-ray or a clinical note;
-they see matrices of numbers (pixels) or mathematical vectors (text
-tokens).</li>
-<li>Traditional ML: Requires human “feature engineering.” A human must
-explicitly tell the model which variables to look at (e.g., Blood
-Pressure + Age = Risk).</li>
-<li>Deep Learning: Uses neural networks to automatically discover
-complex, non-linear features from raw data (e.g., identifying a subtle
-texture on a pathology slide without being told what to look for).</li>
-</ul></section><section id="03-lists_and_dictionaries"><h2 class="section-heading"><a href="03-lists_and_dictionaries.html">ML/AI in Healthcare Applications</a></h2>
+<li>DMPs are Living Tools, Not Paperwork: A Data Management Plan is a
+dynamic roadmap that evolves with your project, serving as an insurance
+policy against data corruption and misinterpretation.</li>
+<li>Proactive Curation Saves Time: Documenting metadata, variable names,
+and folder structures during data collection takes a fraction of the
+effort required to reconstruct them at the end of a project.</li>
+<li>As Open as Possible, As Closed as Necessary: Accessibility under
+FAIR does not violate ethical or GDPR boundaries. Restricted access
+protocols can protect participant privacy while keeping dataset metadata
+fully discoverable.</li>
+<li>Persistent Identifiers Matter: Using DOIs for datasets and linking
+them to your ORCID iD ensures proper citation, academic credit, and
+long-term traceability.</li>
+<li>Prioritize Non-Proprietary Formats: Storing data in open formats
+(e.g., .csv, .tiff, .flac) ensures your files remain readable decades
+after proprietary software licenses expire.</li>
+</ul></section><section id="03-lists_and_dictionaries"><h2 class="section-heading"><a href="03-lists_and_dictionaries.html">Walkthrough of DMP Components</a></h2>
 <hr class="half-width">
 <ul>
-<li>Computer Vision (Breast Cancer): Models analyze pixel-level
-gradients and density variations to flag early-stage microcalcifications
-that human eyes might miss during a long shift.</li>
-<li>Predictive Analytics (Sepsis/Risk): Tabular models monitor
-continuous streams of patient vitals over time, spotting early systemic
-trends (like dropping blood pressure paired with rising heart rate)
-hours before full clinical onset.</li>
-<li>Genomics (Sequence Data): Algorithms treat DNA sequences (<span class="math inline">\(A, T, C, G\)</span>) like languages, utilizing
-transformer models to find long-range genetic mutations linked to rare
-diseases.</li>
+<li>Standardize Formats Early: Always preserve an open-standard copy
+(.csv, .pdf, .flac, .tif) alongside your proprietary working files to
+ensure long-term readability.</li>
+<li>Document for a Stranger: Assume the person re-using your dataset has
+never spoken to you. Provide self-contained README files and data
+dictionaries.</li>
+<li>Protect Sensitive Data at the Consent Stage: Ethical data sharing
+begins with how informed consent forms are written. Include explicit
+wording permitting secondary research on anonymized outputs.</li>
+<li>Enforce 3-2-1 Backups: Never rely on a single laptop, USB drive, or
+unmanaged personal cloud folder for active research data.</li>
+<li>Assign Named Roles: Clearly assign named individuals (e.g., lead
+post-doc, lab manager, PI) to specific data tasks so accountability
+doesn’t fall through the cracks.</li>
 </ul></section><section id="04-libraries_and_imports"><h2 class="section-heading"><a href="04-libraries_and_imports.html"></a></h2>
 <hr class="half-width"></section>
 </div>
