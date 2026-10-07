@@ -236,7 +236,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="01-intro.html">1. Introductions</a>
+        <a href="01-intro.html">1. Data management plans</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -355,7 +355,7 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>All in One View</h1>
         
-<section id="aio-01-intro"><p>Content from <a href="01-intro.html">Introductions</a></p>
+<section id="aio-01-intro"><p>Content from <a href="01-intro.html">Data management plans</a></p>
 <hr>
 <p>Last updated on 2026-10-07 |
 
@@ -380,25 +380,7 @@ license selectors, and FAIR sharing registries.</li>
 </ul></section><section><h2 class="section-heading" id="workshop-schedule">Workshop Schedule<a class="anchor" aria-label="anchor" href="#workshop-schedule"></a>
 </h2>
 <hr class="half-width">
-<p>schedule_data &lt;- data.frame( Time = c(“09:00 - 09:20”, “09:20 -
-10:15”, “10:15 - 10:30”, “10:30 - 11:15”, “11:15 - 11:45”, “11:45 -
-12:00”), Duration = c(“20 min”, “55 min”, “15 min”, “45 min”, “30 min”,
-“15 min”), Session_Topic = c(“1. Why DMPs Matter”, “2. Walkthrough of
-DMP Components”, “Break”, “3. Hands-On Drafting Session”, “4. Peer
-Review &amp; Edge Cases”, “5. Tooling, Resources &amp; Q&amp;A”),
-Core_Activities = c( “Introduction to research data life cycle, funder
-compliance, avoiding data loss, and the FAIR Data Principles.”,
-“Interactive teardown of the 6 core pillars of a standard DMP template
-(Data Creation, Documentation, Ethics, Storage, Sharing,
-Responsibilities).”, “Refreshments &amp; Networking”, “Participants use
-DMPonline / DMPTool or a structured template to draft sections for their
-own project.”, “Group evaluation of draft plans using a review
-checklist. Focus on high-risk areas (sensitive data, large file volumes,
-proprietary software).”, “Summary of institutional support, data
-repositories, DOI assignment, and final Q&amp;A.” ) )</p>
-<p>knitr::kable( schedule_data, col.names = c(“Time”, “Duration”,
-“Session Topic”, “Core Activities &amp; Focus”), caption = “Half-Day
-Workshop Schedule” )</p>
+<p><img src="fig/schedule.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
 <p>Detailed Session Breakdown Session 1: Foundation &amp; The FAIR
 Principles (20 mins)</p>
 <ul>
@@ -625,21 +607,7 @@ takes 3–5x more effort than logging metadata continuously.</p>
 <hr class="half-width">
 <p>Funding cycles usually last 1–3 years, but research data can have a
 lifespan of decades if properly curated.</p>
-<table class="table">
-<colgroup><col width="101%"></colgroup>
-<tbody><tr>
-<td>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a>                       <span class="ex">THE</span> RESEARCH DATA LIFE CYCLE</span></code></pre>
-</div>
-<p>[ 1. Planning ] —&gt; [ 2. Collection ] —&gt; [ 3.
-Processing/Analysis ] | ^ | | v [ 6. Re-use ] &lt;— [ 5.
-Sharing/Discovery ] &lt;— [ 4. Preservation ] |</p>
-</td>
-</tr></tbody>
-</table>
+<p><img src="fig/pillar_12.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
 <ul>
 <li>Projects end; data persists. Major funding bodies (e.g., UKRI, NIH,
 Horizon Europe, Wellcome) treat research outputs as public goods.</li>
@@ -830,21 +798,7 @@ responsibilities and budget for curation costs in grant proposals.</li>
 <p>Module 2.1: The 6 Pillars of a Data Management Plan</p>
 <p>Standard DMP templates from major funding bodies (e.g., UKRI, NIH,
 Horizon Europe) are structured around six fundamental areas:</p>
-<table class="table">
-<colgroup><col width="101%"></colgroup>
-<tbody><tr>
-<td>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a>                       <span class="ex">THE</span> 6 PILLARS OF A ROBUST DMP</span></code></pre>
-</div>
-<p>[ 1. Data Creation ] —&gt; [ 2. Documentation ] —&gt; [ 3. Ethics
-&amp; Legal ] | v [ 6. Responsibilities] &lt;— [ 5. Preservation ] &lt;—
-[ 4. Storage &amp; Backup ]</p>
-</td>
-</tr></tbody>
-</table>
+<p><img src="fig/pillar_21.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
 <p>Module 2.2: Pillar Breakdown &amp; Best Practices ## Pillar 1: Data
 Creation, Types &amp; Formats</p>
 <ul>
@@ -926,6 +880,7 @@ permissions are managed.</li>
 </li>
 <li>The 3-2-1 Backup Strategy:</li>
 </ul>
+<p><img src="fig/pillar_22.4.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
 <p>Security Warning: Avoid syncing unencrypted sensitive participant
 data to commercial cloud services (e.g., personal Dropbox or Google
 Drive). Use institutionally managed, encrypted storage solution.</p>
@@ -997,13 +952,154 @@ doesn’t fall through the cracks.</li>
 </div>
 </section></section><section id="aio-04-libraries_and_imports"><p>Content from <a href="04-libraries_and_imports.html"></a></p>
 <hr>
-<p>Last updated on 2026-10-06 |
+<p>Last updated on 2026-10-07 |
 
         <a href="https://github.com/corcor27/HCRW-workshop/edit/main/episodes/04-libraries_and_imports.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
-<p>hello</p></section>
+<table class="table"><tbody>
+<tr>
+<td>title: Practical Drafting Session</td>
+</tr>
+<tr>
+<td>teaching: 45</td>
+</tr>
+<tr>
+<td>exercises: 15</td>
+</tr>
+</tbody></table>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Format Conversion Overhead: “How much automated scripting (e.g.,
+Python, R, Bash) can you write into your analysis pipeline to
+automatically convert working files to open standards upon
+completion?”</li>
+<li>Cloud vs. On-Premises Backups: “Does your current backup setup
+fulfill all three components of the 3-2-1 strategy, or are you relying
+entirely on a single synchronized cloud folder?”</li>
+<li>Documentation Debt: “How long would it take to draft a complete
+README.txt for your current active project if you started right
+now?”</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Draft Core DMP Sections: Write concrete, funder-compliant responses
+for Data Collection, Ethics/Storage, and Long-Term Sharing.</li>
+<li>Formulate Format Conversion Rules: Identify proprietary file formats
+used in their current pipeline and define clear export pathways to open
+standards.</li>
+<li>Construct a Standardised README.txt: Build a project root folder
+documentation asset following metadata standards.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="hands-on-drafting-exercises">Hands-On Drafting Exercises<a class="anchor" aria-label="anchor" href="#hands-on-drafting-exercises"></a>
+</h2>
+<hr class="half-width">
+<p>Participants will open their preferred tool (DMPonline, DMPTool, or a
+local Word/Markdown template) and complete three focused drafting
+blocks.</p>
+<div class="section level3">
+<h3 id="exercise-1-data-types-formats-volume-15-mins">Exercise 1: Data Types, Formats &amp; Volume (15 mins)<a class="anchor" aria-label="anchor" href="#exercise-1-data-types-formats-volume-15-mins"></a>
+</h3>
+<p>Prompt: Define the operational outputs of your current or upcoming
+project using the structured breakdown below.</p>
+<p><img src="fig/pillar_22.1.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
+</div>
+<div class="section level3">
+<h3 id="exercise-2-ethics-security-backup-15-mins">Exercise 2: Ethics, Security &amp; Backup (15 mins)<a class="anchor" aria-label="anchor" href="#exercise-2-ethics-security-backup-15-mins"></a>
+</h3>
+<p>Prompt: Document your data protection measures, consent boundaries,
+and backup pipeline using the 3-2-1 strategy framework.</p>
+<p><img src="fig/pillar_22.1.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
+</div>
+<div class="section level3">
+<h3 id="exercise-3-documentation-asset-root-readme-txt-15-mins">Exercise 3: Documentation Asset – Root README.txt (15 mins)<a class="anchor" aria-label="anchor" href="#exercise-3-documentation-asset-root-readme-txt-15-mins"></a>
+</h3>
+<p>Prompt: Create a standardized, bare-bones README.txt template to
+accompany your dataset upon repository deposit.</p>
+<p>========================================================================
+DATASET README FILE
+========================================================================</p>
+<ol style="list-style-type: decimal">
+<li>GENERAL INFORMATION
+<ul>
+<li>Title of Dataset: [ Insert Project Title ]</li>
+<li>Principal Investigator / Author: [ Name, ORCID iD, Email ]</li>
+<li>Date of Data Collection: [ YYYY-MM-DD to YYYY-MM-DD ]</li>
+<li>Geographic Location / Context: [ Institution / Field Location ]</li>
+<li>Funding Source / Grant Number: [ Funder Name, Grant ID ]</li>
+</ul>
+</li>
+<li>FILE &amp; DIRECTORY STRUCTURE
+<ul>
+<li>/raw_data/ : Unprocessed files direct from acquisition
+equipment.</li>
+<li>/processed_data/ : Anonymized, cleaned, and feature-engineered
+outputs (.csv).</li>
+<li>/scripts/ : Code pipelines for processing and statistical
+evaluation.</li>
+<li>/docs/ : Data dictionary, codebook, and metadata definitions.</li>
+</ul>
+</li>
+<li>DATA DICTIONARY &amp; VARIABLES
+<ul>
+<li>Column A: sample_id [ Unique participant identifier; string ]</li>
+<li>Column B: scan_date [ Date of scan acquisition; ISO 8601 YYYY-MM-DD
+]</li>
+<li>Column C: volume_mm3 [ Calculated lesion volume; numeric, float
+]</li>
+<li>Missing Values Code : NA or -9999</li>
+</ul>
+</li>
+<li>LICENSING &amp; ACCESS
+<ul>
+<li>Usage License : Creative Commons Attribution 4.0 International
+(CC-BY 4.0)</li>
+<li><h1 id="persistent-identifier-doi-10.xxxxzenodo.xxxxxxx">Persistent
+Identifier: DOI: 10.xxxx/zenodo.xxxxxxx</h1></li>
+</ul>
+</li>
+</ol>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Draft as You Work: Never wait until the final month of a grant to
+write your DMP documentation assets.</li>
+<li>Automate Format Exports: Integrate export rules (.csv, .pdf, .tif)
+directly into your computing pipelines.</li>
+<li>Lock Down Identifiers: Pseudonymize early and verify that linkage
+keys are stored separately from raw analytical files.</li>
+<li>Standardize Metadata From Day 1: Using ISO standards (e.g., ISO 8601
+for dates: YYYY-MM-DD) and clear missing value indicators (NA) prevents
+downstream analysis bugs.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section></section>
 </div>
     </main>
 </div>

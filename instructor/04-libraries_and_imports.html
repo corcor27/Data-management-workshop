@@ -199,7 +199,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="01-intro.html">1. Introductions</a>
+        <a href="01-intro.html">1. Data management plans</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -226,12 +226,19 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         4.
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#hands-on-drafting-exercises">Hands-On Drafting Exercises</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -308,7 +315,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1></h1>
-        <p>Last updated on 2026-10-06 |
+        <p>Last updated on 2026-10-07 |
 
         <a href="https://github.com/corcor27/HCRW-workshop/edit/main/episodes/04-libraries_and_imports.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -321,10 +328,120 @@
         </div>
 
         
-<p>hello</p>
 
-
-      </div> <!-- / div.lesson-content -->
+<table class="table"><tbody><tr><td>title: Practical Drafting Session</td>
+</tr><tr><td>teaching: 45</td>
+</tr><tr><td>exercises: 15</td>
+</tr></tbody></table><div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul><li>Format Conversion Overhead: “How much automated scripting (e.g.,
+Python, R, Bash) can you write into your analysis pipeline to
+automatically convert working files to open standards upon
+completion?”</li>
+<li>Cloud vs. On-Premises Backups: “Does your current backup setup
+fulfill all three components of the 3-2-1 strategy, or are you relying
+entirely on a single synchronized cloud folder?”</li>
+<li>Documentation Debt: “How long would it take to draft a complete
+README.txt for your current active project if you started right
+now?”</li>
+</ul></div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul><li>Draft Core DMP Sections: Write concrete, funder-compliant responses
+for Data Collection, Ethics/Storage, and Long-Term Sharing.</li>
+<li>Formulate Format Conversion Rules: Identify proprietary file formats
+used in their current pipeline and define clear export pathways to open
+standards.</li>
+<li>Construct a Standardised README.txt: Build a project root folder
+documentation asset following metadata standards.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="hands-on-drafting-exercises">Hands-On Drafting Exercises<a class="anchor" aria-label="anchor" href="#hands-on-drafting-exercises"></a></h2>
+<hr class="half-width"><p>Participants will open their preferred tool (DMPonline, DMPTool, or a
+local Word/Markdown template) and complete three focused drafting
+blocks.</p>
+<div class="section level3">
+<h3 id="exercise-1-data-types-formats-volume-15-mins">Exercise 1: Data Types, Formats &amp; Volume (15 mins)<a class="anchor" aria-label="anchor" href="#exercise-1-data-types-formats-volume-15-mins"></a></h3>
+<p>Prompt: Define the operational outputs of your current or upcoming
+project using the structured breakdown below.</p>
+<p><img src="../fig/pillar_22.1.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
+</div>
+<div class="section level3">
+<h3 id="exercise-2-ethics-security-backup-15-mins">Exercise 2: Ethics, Security &amp; Backup (15 mins)<a class="anchor" aria-label="anchor" href="#exercise-2-ethics-security-backup-15-mins"></a></h3>
+<p>Prompt: Document your data protection measures, consent boundaries,
+and backup pipeline using the 3-2-1 strategy framework.</p>
+<p><img src="../fig/pillar_22.1.png" alt="Flow Diagram for determining supvervised vs unsupervised" class="figure">.</p>
+</div>
+<div class="section level3">
+<h3 id="exercise-3-documentation-asset-root-readme-txt-15-mins">Exercise 3: Documentation Asset – Root README.txt (15 mins)<a class="anchor" aria-label="anchor" href="#exercise-3-documentation-asset-root-readme-txt-15-mins"></a></h3>
+<p>Prompt: Create a standardized, bare-bones README.txt template to
+accompany your dataset upon repository deposit.</p>
+<p>========================================================================
+DATASET README FILE
+========================================================================</p>
+<ol style="list-style-type: decimal"><li>GENERAL INFORMATION
+<ul><li>Title of Dataset: [ Insert Project Title ]</li>
+<li>Principal Investigator / Author: [ Name, ORCID iD, Email ]</li>
+<li>Date of Data Collection: [ YYYY-MM-DD to YYYY-MM-DD ]</li>
+<li>Geographic Location / Context: [ Institution / Field Location ]</li>
+<li>Funding Source / Grant Number: [ Funder Name, Grant ID ]</li>
+</ul></li>
+<li>FILE &amp; DIRECTORY STRUCTURE
+<ul><li>/raw_data/ : Unprocessed files direct from acquisition
+equipment.</li>
+<li>/processed_data/ : Anonymized, cleaned, and feature-engineered
+outputs (.csv).</li>
+<li>/scripts/ : Code pipelines for processing and statistical
+evaluation.</li>
+<li>/docs/ : Data dictionary, codebook, and metadata definitions.</li>
+</ul></li>
+<li>DATA DICTIONARY &amp; VARIABLES
+<ul><li>Column A: sample_id [ Unique participant identifier; string ]</li>
+<li>Column B: scan_date [ Date of scan acquisition; ISO 8601 YYYY-MM-DD
+]</li>
+<li>Column C: volume_mm3 [ Calculated lesion volume; numeric, float
+]</li>
+<li>Missing Values Code : NA or -9999</li>
+</ul></li>
+<li>LICENSING &amp; ACCESS
+<ul><li>Usage License : Creative Commons Attribution 4.0 International
+(CC-BY 4.0)</li>
+<li><h1 id="persistent-identifier-doi-10.xxxxzenodo.xxxxxxx">Persistent
+Identifier: DOI: 10.xxxx/zenodo.xxxxxxx</h1></li>
+</ul></li>
+</ol><div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul><li>Draft as You Work: Never wait until the final month of a grant to
+write your DMP documentation assets.</li>
+<li>Automate Format Exports: Integrate export rules (.csv, .pdf, .tif)
+directly into your computing pipelines.</li>
+<li>Lock Down Identifiers: Pseudonymize early and verify that linkage
+keys are stored separately from raw analytical files.</li>
+<li>Standardize Metadata From Day 1: Using ISO standards (e.g., ISO 8601
+for dates: YYYY-MM-DD) and clear missing value indicators (NA) prevents
+downstream analysis bugs.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter Bottom"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/03-lists_and_dictionaries.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -384,7 +501,7 @@
   "url": "https://swcarpentry.github.io/python-novice-inflammation/instructor/04-libraries_and_imports.html",
   "identifier": "https://swcarpentry.github.io/python-novice-inflammation/instructor/04-libraries_and_imports.html",
   "dateCreated": "2014-11-25",
-  "dateModified": "2026-10-06",
+  "dateModified": "2026-10-07",
   "datePublished": "2026-10-07"
 }
 
